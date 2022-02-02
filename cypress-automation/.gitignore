@@ -1,5 +1,14 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,intellij+all,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,intellij+all,macos
+# Created by https://www.toptal.com/developers/gitignore/api/node,macos,intellij+all,cypressio
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,macos,intellij+all,cypressio
+
+### CypressIO ###
+# gitignore template for the CypressIO, browser test framework
+# website: https://www.cypress.io/
+
+cypress/results/*
+cypress/reports/*
+cypress/screenshots/*
+cypress/videos/*
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -265,4 +274,4 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
-# End of https://www.toptal.com/developers/gitignore/api/node,intellij+all,macos
+# End of https://www.toptal.com/developers/gitignore/api/node,macos,intellij+all,cypressio
