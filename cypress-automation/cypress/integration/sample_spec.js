@@ -9,6 +9,12 @@ describe("My First Test Suite", function () {
         cy.get(":nth-child(1) > .stepper-input > .increment").click();
         cy.get(":nth-child(1) > .stepper-input > .increment").click();
         cy.get(".products").find(".product").eq(0).contains("ADD TO CART").click();
+        cy.get(".products").find(".product").each((element) => {
+            const vegText = element.find("h4.product-name").text();
+            if (vegText.includes("Cashews")) {
+                cy.wrap(element).find('button').click()
+            }
+        } );
 
     });
 });
