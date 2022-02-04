@@ -12,9 +12,12 @@ describe("My First Test Suite", function () {
         cy.get(".products").find(".product").each((element) => {
             const vegText = element.find("h4.product-name").text();
             if (vegText.includes("Cashews")) {
-                cy.wrap(element).find('button').click()
+                cy.wrap(element).find("button").click();
             }
-        } );
+        });
+        cy.get(".brand").then(logoElement => {
+            cy.log(logoElement.text());
+        });
 
     });
 });
